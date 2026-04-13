@@ -5,6 +5,16 @@ package app;
  */
 public class App {
   public static void main(String[] args) {
+    three();
+  }
+
+  private static void three() {
+    Clock clock = Clock.getInstance();
+    clock.setTime(18);
+    System.out.println(clock.getTime());
+  }
+
+  private static void two() {
     final int ageDistribution[][] = {
         { 10, 19 }, { 50, 20 }, { 70, 21 }, { 80, 22 }, { 85, 23 }, { 90, 24 }, { 95, 25 }, { 100, 26 }
     };
